@@ -15,18 +15,31 @@
       font: 400 16px/1.8 Lato, sans-serif;
       color: #777;
       text-align: center;
+
   }
   h2 {
       margin: 10px 0 30px 0;
       color: blue;
       text-align:center;
   }
-  h3, h4 {
+  h3{
+    letter-spacing: 10px;
+    font-size: 30px;
+    color: #111;
+  }
+  h4 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;
       font-size: 30px;
       color: #111;
   }
+  .container-fluid p {
+
+    width:70%;
+    margin: auto;
+  }
+
+
   .container {
       padding: 80px 120px;
   }
@@ -39,6 +52,11 @@
   .person:hover {
       border-color: #f1f1f1;
   }
+
+
+  .carousel-control.left, .carousel-control.right {
+    background-image: none
+ }
   .carousel-inner img {
       width: 70%; /* Set width to 100% */
       margin: auto;
@@ -178,13 +196,13 @@
   </div>
 </nav>
 
-
-<!-- Container (The Team Section) -->
-<div id="team" class="container text-center" >
+<div class="container text-center">
   <h3>AutoAuto</h3>
   <blockquote class="lead">
     <p class="text-success">Helping kids owning their pathways to the tech world.</p>
   </blockquote>
+</div>
+<div class="container-fluid " >
   <p ><strong>Our team aims to build scalable learning platforms that allow kids
      to start developing in Python from an early age, gradually leveling them up to
       more advanced coding methods and languages. Our use cases integrates Python
@@ -197,6 +215,11 @@
         Python and autonomous vehicles.
         </strong></p>
       <br>
+ </div>
+
+
+<!-- Container (The Team Section) -->
+ <div id="team" class="container-fluid text-center" style = "background-color:#ff9900;">
   <div class="row">
       <h3>About Us</h3>
     <div class="col-sm-3">
@@ -247,10 +270,9 @@
 </div>
 
 
-
   <!-- Container (Events Section) -->
 <div id="news" >
-  <h3 class="text-center">News</h3>
+  <h3 class="text-center" >News</h3>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -293,44 +315,45 @@
         <span class="sr-only">Next</span>
       </a>
   </div>
+  <div class="container-fuid"  style = "background-color:#ff9900;">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">HelloWorld Studio Summer Camp</a></li>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">HelloWorld Studio Summer Camp</a></li>
+      <li><a data-toggle="tab" href="#menu2">Coding4tx Hackathon</a></li>
 
-    <li><a data-toggle="tab" href="#menu2">Coding4tx Hackathon</a></li>
+      <li><a data-toggle="tab" href="#menu3">StartUp Drive Second Phase</a></li>
+    </ul>
 
-    <li><a data-toggle="tab" href="#menu3">StartUp Drive Second Phase</a></li>
-  </ul>
+    <div class="tab-content">
 
-  <div class="tab-content">
-
-    <div id="home" class="tab-pane fade in active" >
-      <h2>AutoAuto teaching kids next summer</h2>
-      <p class="text-center">We partnered with Hello World Studio to provide an engaging learning</p>
-      <p class="text-center"> plataform using AutoAuto autonomous cars, A.I. and Python lessons on </p>
-      <p class="text-center"> two Summer camps next year. More information at:</p>
-          <a href="http://www.helloworldstudio.org/summer-programs">Hello World Studio</a>
-      <div class="container">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pEeIbLjNbRI"></iframe>
+      <div id="home" class="tab-pane fade in active" >
+        <h2>AutoAuto teaching kids next summer</h2>
+        <p class="text-center">We partnered with Hello World Studio to provide an engaging learning</p>
+        <p class="text-center"> plataform using AutoAuto autonomous cars, A.I. and Python lessons on </p>
+        <p class="text-center"> two Summer camps next year. More information at:</p>
+            <a href="http://www.helloworldstudio.org/summer-programs">Hello World Studio</a>
+        <div class="container">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pEeIbLjNbRI"></iframe>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="menu2" class="tab-pane fade" style="margin:20px">
-      <h2>Coding4tx hackathon at Galvanize</h2>
-      <p>AutoAuto team will be volunteering on this Hackathon to help the students</p>
-      <p>   creating projects to solve youth problems via coding.</p>
-        <p> More information at:</p>
-      <div class="text-center">
-        <a  href="https://www.eventbrite.com/e/coding4tx-hackathon-galvanize-tickets-28583989482?aff=es2">coding4tx-hackathon</a>
+      <div id="menu2" class="tab-pane fade" style="margin:20px">
+        <h2>Coding4tx hackathon at Galvanize</h2>
+        <p>AutoAuto team will be volunteering on this Hackathon to help the students</p>
+        <p>   creating projects to solve youth problems via coding.</p>
+          <p> More information at:</p>
+        <div class="text-center">
+          <a  href="https://www.eventbrite.com/e/coding4tx-hackathon-galvanize-tickets-28583989482?aff=es2">coding4tx-hackathon</a>
+        </div>
       </div>
-    </div>
 
-    <div id="menu3" class="tab-pane fade" style="margin:20px">
-    <h2>AutoAuto in Paris</h2>
-      <p>For winning the StartUp Drive - Austin, 2016, half of our team is going</p>
-       <p>to France to meet some of the Reno team.</p>
+      <div id="menu3" class="tab-pane fade" style="margin:20px">
+      <h2>AutoAuto in Paris</h2>
+        <p>For winning the StartUp Drive - Austin, 2016, half of our team is going</p>
+         <p>to France to meet some of the Reno team.</p>
+      </div>
     </div>
   </div>
 </div>
