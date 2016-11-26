@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>AutoAuto</title>
+
+  <title><b>AutoAuto</b></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -35,17 +35,13 @@
       border-color: #f1f1f1;
   }
   .carousel-inner img {
-      width: 40%; /* Set width to 100% */
+      width: 70%; /* Set width to 100% */
       margin: auto;
   }
   .carousel-caption h3 {
       color: #fff !important;
   }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
+
   .bg-1 {
       background: #2d2d30;
       color: #bdbdbd;
@@ -93,12 +89,7 @@
   .nav-tabs li a {
       color: #777;
   }
-  #googleMap {
-      width: 100%;
-      height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-  }
+
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
@@ -259,26 +250,23 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="images/startup_drive.jpg" alt="New York" width="300" height="300">
+          <img src="images/recon5.jpg" alt="New York" >
           <div class="carousel-caption">
-            <h3>Autonomous car coded in Python</h3>
-            <p>Our first prototype being create at the StartUp Drive Event.</p>
+            <p>AutoAuto was create at the StartUp Drive Event last summer.</p>
           </div>
         </div>
 
         <div class="item">
-          <img src="images/hello_world.jpg" alt="Chicago" width="300" height="300">
+          <img src="images/recon2.jpg" alt="Chicago" >
           <div class="carousel-caption">
-            <h3>Recon Demo at the Hello World Event</h3>
-            <p>Second prototype from Intel Jeule Hackaton.</p>
+            <p>Second prototype, ReconBot was created at the Intel Jeule Hackaton.</p>
           </div>
         </div>
 
         <div class="item">
-          <img src="images/recon2.jpg" alt="Los Angeles" width="300" height="300">
+          <img src="images/hello_world.jpg" alt="Los Angeles">
           <div class="carousel-caption">
-            <h3>Recon has motion sensors to patrol your home</h3>
-            <p>It talks to you on twitter and sends you a picture when you ask for the status of your home</p>
+            <p>ReconBot has motion sensors to patrol your home</p>
           </div>
         </div>
       </div>
@@ -295,25 +283,40 @@
   </div>
 
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Paris</a></li>
-    <li><a data-toggle="tab" href="#menu1">HelloWorld</a></li>
-    <li><a data-toggle="tab" href="#menu2">Galvanize Hackathon</a></li>
+    <li class="active"><a data-toggle="tab" href="#menu1">HelloWorld Studio Summer Camp</a></li>
+
+    <li><a data-toggle="tab" href="#menu2">Coding4tx Hackathon</a></li>
+
+    <li class="active"><a data-toggle="tab" href="#menu3">StartUp Drive Second Phase</a></li>
   </ul>
 
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active" style="margin:20px">
+
+    <div id="menu1" class="tab-pane fade" style="margin:20px">
+      <h2>AutoAuto teaching kids next summer</h2>
+      <p>We partnered with Hello World Studio to provide using Autoauto A.I. and</p>
+      <p>  Python lessons on two Summer camps next year.</p>
+      <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pEeIbLjNbRI"></iframe>
+        </div>
+      </div>
+      <p> More information at:</p>
+    <a href="http://www.helloworldstudio.org/summer-programs">Hello World Studio</a>
+    </div>
+
+    <div id="menu2" class="tab-pane fade" style="margin:20px">
+      <h2>Coding4tx hackathon at Galvanize</h2>
+      <p>AutoAuto team will be volunteering on this Hackathon to help the students</p>
+      <p>   creating projects to solve youth problems via coding.</p>
+        <p> More information at:</p>
+      <a href="https://www.eventbrite.com/e/coding4tx-hackathon-galvanize-tickets-28583989482?aff=es2">coding4tx-hackathon</a>
+    </div>
+
+    <div id="menu3" class="tab-pane fade in active" style="margin:20px">
     <h2>AutoAuto in Paris</h2>
-      <p>AutoAuto in Paris yeah babe
-        AutoAuto in Paris yeah babe
-        AutoAuto in Paris yeah babe
-        TO DO </p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h2>Hello World Summer Camp</h2>
-      <p>Partnership with Hello World, Charles and Paul giving a Demo at the Hello World Google Fiber Day video, etc..</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <p>Coming up soon, students Hackaton...</p>
+      <p>For winning the StartUp Drive - Austin, 2016, half of our team is going</p>
+       <p>to France to meet some of the Reno team.</p>
     </div>
   </div>
 </div>
