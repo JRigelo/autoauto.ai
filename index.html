@@ -14,10 +14,12 @@
   body {
       font: 400 16px/1.8 Lato, sans-serif;
       color: #777;
+      text-align: center;
   }
   h2 {
       margin: 10px 0 30px 0;
-      color: #111;
+      color: blue;
+      text-align:center;
   }
   h3, h4 {
       margin: 10px 0 30px 0;
@@ -89,10 +91,16 @@
   .modal-header, .modal-body {
       padding: 40px 50px;
   }
-  .nav-tabs li a {
-      color: #777;
+  .nav-tabs > li, .nav-pills > li {
+      float:none;
+      display:inline-block;
+      *display:inline; /* ie7 fix */
+       zoom:1; /* hasLayout ie7 trigger */
   }
 
+  .nav-tabs, .nav-pills {
+      text-align:center;
+  }
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
@@ -102,6 +110,7 @@
       letter-spacing: 4px;
       opacity: 0.9;
   }
+
   .navbar li a, .navbar .navbar-brand {
       color: #d5d5d5 !important;
       line-height: 90px;
@@ -296,11 +305,11 @@
 
   <div class="tab-content">
 
-    <div id="home" class="tab-pane fade in active" style="margin:20px">
+    <div id="home" class="tab-pane fade in active" >
       <h2>AutoAuto teaching kids next summer</h2>
-      <p>We partnered with Hello World Studio to provide an engaging learning</p>
-      <p> plataform using AutoAuto autonomous cars, A.I. and Python lessons on </p>
-      <p> two Summer camps next year. More information at:</p>
+      <p class="text-center">We partnered with Hello World Studio to provide an engaging learning</p>
+      <p class="text-center"> plataform using AutoAuto autonomous cars, A.I. and Python lessons on </p>
+      <p class="text-center"> two Summer camps next year. More information at:</p>
           <a href="http://www.helloworldstudio.org/summer-programs">Hello World Studio</a>
       <div class="container">
         <div class="embed-responsive embed-responsive-16by9">
@@ -314,7 +323,9 @@
       <p>AutoAuto team will be volunteering on this Hackathon to help the students</p>
       <p>   creating projects to solve youth problems via coding.</p>
         <p> More information at:</p>
-      <a href="https://www.eventbrite.com/e/coding4tx-hackathon-galvanize-tickets-28583989482?aff=es2">coding4tx-hackathon</a>
+      <div class="text-center">
+        <a  href="https://www.eventbrite.com/e/coding4tx-hackathon-galvanize-tickets-28583989482?aff=es2">coding4tx-hackathon</a>
+      </div>
     </div>
 
     <div id="menu3" class="tab-pane fade" style="margin:20px">
