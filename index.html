@@ -48,6 +48,11 @@
   .person:hover {
       border-color: #f1f1f1;
   }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
   .carousel-control.left, .carousel-control.right {
       background-image: none
   }
