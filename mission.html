@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>AutoAuto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body {
+       font: 400 16px/1.8 Lato, sans-serif;
+       color: #777;
+       text-align: center;
+  }
+  h2 {
+       margin: 10px 0 30px 0;
+       color: black;
+       text-align:center;
+  }
+  h3 {
+       letter-spacing: 10px;
+       font-size: 30px;
+       color: #111;
+  }
+  h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 30px;
+      color: #111;
+  }
+  .container-fluid p {
+      width: 70%;
+      margin: auto;
+  }
+  .container {
+      width: 70%;
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .carousel-control.left, .carousel-control.right {
+      background-image: none
+  }
+  .carousel-inner img {
+      width: 70%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption p {
+      color: white !important;
+      font-size: 25px;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs > li, .nav-pills > li {
+      float:none;
+      display:inline-block;
+      *display:inline; /* ie7 fix */
+       zoom:1; /* hasLayout ie7 trigger */
+  }
+
+  .nav-tabs, .nav-pills {
+      text-align:center;
+  }
+  .tab-pane p {
+      text-align:center;
+      margin: 50px;
+      font-size: 20px;
+  }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #20B2AA;
+      border: 0;
+      font-size: 13px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+
+  .navbar li a, .navbar .navbar-brand {
+      color: #BDB76B !important;
+      line-height: 90px;
+      height: 90px;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #008080 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+
+  div.background {
+    background: url(/images/fleet.jpg) repeat;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+
+}
+
+  footer {
+      background-color: #20B2AA;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  i { cursor: pointer; cursor: hand; }
+  </style>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home" ><img style="max-width:120px; margin-top: -7px;" src="images/autoauto.jpg" class="img-rounded " alt="Cinque Terre"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+</header>
+<br>
+<body>
+  <div class="container sec">
+    <div class="row">
+    <div class="col-md-11 col-md-pull-2 main-space">
+    <h2 class="main-head">The Problem</h2>
+    <p>According to the
+      <a href="https://www.bls.gov/careeroutlook/2014/spring/art01.pdf">
+        U.S. Bureau of Labor Statistics</a>, career opportunities in
+     the fields of science, technology, engineering, and math (STEM) are
+     projected to increase by about 1 million jobs by 2022, but the number of
+     American college graduates qualified and expected to fill these roles is
+     still falling short.</p>
+     <p>A <a href="https://www.nsf.gov/statistics/2016/nsb20161/#/report/chapter-1/highlights">
+     recent report</a> published by the National Science Foundation found
+       that students from underprivileged backgrounds continue to lag behind
+       their more privileged peers, limiting them from opportunities to be
+       exposed to and to grow in STEM subjects that can lead to intellectually
+       stimulating and rewarding careers.</p>
+    </div>
+    </div>
+     <hr class="main-divider">
+    <div class="row">
+    <div class="col-md-11 col-md-push-2 main-space">
+        <h2 >Our Mission</h2>
+    <p>We want to create opportunities for every kid to have an early exposure
+       to computer programming and technological fields so that they can
+       develop technical fluency and confidence in their ability to innovate
+       through programming and other dynamic technologies.</p>
+    <p>We know that learning about technology is challenging, and making the
+      leap from beginner-level to proficiency is often ill-defined and poorly
+      facilitated. We provide accessible learning platforms (using our
+      curriculum, open-source software and hardware) for kids (of a wide range
+       of ages) to explore. </p>
+    </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+    <p id="foot">© Copyright AutoAuto, LLC &#169; 2017</p>
+    </footer>
+
+</body>
+</html>
